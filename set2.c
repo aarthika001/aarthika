@@ -7,17 +7,17 @@ scanf("%s",&a);
 printf("%s",a);
 if(a=='sunday')
 printf("yes");
-else if(a=='monday')
+else if(a=="monday")
 printf("no");
-else if(a=='tuesday')
+else if(a=="tuesday")
 printf("no");
-else if(a=='wednesday')
+else if(a=="wednesday")
 printf("no");
-else if(a=='thrusday')
+else if(a=="thrusday")
 printf("no");
-else if(a=='friday')
+else if(a=="friday")
 printf("no");
-else if(a=='saturday')
+else if(a=="saturday")
 printf("no");
 else
 printf("default");
