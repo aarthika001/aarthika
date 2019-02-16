@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a[10],i,j,m,t,l=0;
+    scanf("%d",&m);
+    for(i=0;i<m;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<m;i++)
+    {
+        for(j=i+1;j<m;j++)
+        {
+            if(a[i]>a[j])
+            {
+                t=a[i];
+                a[i]=a[j];
+                a[j]=t;
+            }
+        }
+    }
+    for(i=0;i<=m/2;i++)
+    {
+        l=a[i];
+    }
+        printf("%d",l);
+    getch();
+}
