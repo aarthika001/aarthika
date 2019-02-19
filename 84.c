@@ -2,9 +2,9 @@
 #include<conio.h>
 void main()
 {
-char a;
+char ch;
 clrscr();
-scanf("%c",&a);
-printf("%d",a);
+scanf("%c",&ch);
+printf("%d",ch);
 getch();
 }
