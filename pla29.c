@@ -1,16 +1,16 @@
 #include <stdio.h>
-
-int main()
+#include<conio.h>
+void main()
 {
-int a,b,j,i,cnt=0;
-scanf("%d%d",&a,&b);
-for(i=a;i<=b;i++)
+int a1,a2,j,i,l=0;
+scanf("%d%d",&a1,&a2);
+for(i=a1;i<=a2;i++)
 {
  for (int j = 1; j * j <= i; j++) 
 {
             if (j * j == i) 
-                cnt++; 
+                l++; 
 }}
-printf("%d",cnt++);
-    return 0;
+printf("%d",l++);
+getch();
 }
