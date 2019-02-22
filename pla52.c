@@ -2,29 +2,29 @@
 
 int main()
 {
-    int a[10],c=0,m,k,n,s,i,j,p;
+    int b[10],d=0,m1,k1,n1,s,i,j,p;
     scanf("%d%d",&n,&k);
-    for(i=0;i<n;i++)
+    for(i=0;i<n1;i++)
     {
-        scanf("%d",&a[i]);
+        scanf("%d",&b[i]);
     }
-    m=n-k;
-    for(i=0;i<=m;i++)
+    m1=n1-k1;
+    for(i=0;i<=m1;i++)
     {
-        for(j=0;j<k;j++)
+        for(j=0;j<k1;j++)
         {
-            c=0;
-            for(s=0;s<n;s++)
+            d=0;
+            for(s=0;s<n1;s++)
             {
-                if(a[s]>c)
+                if(b[s]>d)
                 {
-                    c=a[s];
+                    c=b[s];
                     p=s;
                 }
             }
         }
-        a[p]=0;
+        b[p]=0;
     }
-    printf("%d",c);
+    printf("%d",d);
     return 0;
 }
