@@ -1,27 +1,25 @@
 #include <stdio.h>
 void main()
 {
-int a,i,t;
+int a,j,t;
 scanf("%d",&a);
 int a1[a];
-for(i=0;i<a;i++)
+for(j=0;j<a;j++)
 {
-    scanf("%d",&a1[i]);
+    scanf("%d",&a1[j]);
 }
 
 
-for(i=0;i<a-1;i=i+2)
+for(j=0;j<a-1;j=j+2)
 {
-    
-    t=a1[i];
-    a1[i]=a1[i+1];
-    a1[i+1]=t;
+   t=a1[j];
+    a1[j]=a1[j+1];
+    a1[j+1]=t;
     }
-
-for(i=0;i<a;i++)
+}
+for(j=0;j<a;j++)
 {
-    printf("%d ",a1[i]);
+    printf("%d ",a1[j]);
 }
-
+}
     
-}
